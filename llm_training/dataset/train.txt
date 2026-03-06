@@ -209,3 +209,1003 @@ Answer: Blockchain is used to securely record transactions.
 Context: Edge computing processes data closer to the location where it is generated instead of sending it to centralized servers.
 Question: What does edge computing do with data?
 Answer: Edge computing processes data closer to where it is generated.
+
+Context: A stack is a linear data structure that follows the Last In First Out (LIFO) principle.
+Question: What principle does a stack follow?
+Answer: A stack follows the Last In First Out principle.
+
+Context: A queue is a data structure that follows the First In First Out (FIFO) principle.
+Question: What principle does a queue follow?
+Answer: A queue follows the First In First Out principle.
+
+Context: A linked list is a data structure where elements are stored in nodes connected by pointers.
+Question: How are elements stored in a linked list?
+Answer: Elements are stored in nodes connected by pointers.
+
+Context: A binary tree is a hierarchical data structure where each node has at most two children.
+Question: How many children can a node have in a binary tree?
+Answer: A node can have at most two children.
+
+Context: A graph is a data structure consisting of nodes connected by edges.
+Question: What does a graph consist of?
+Answer: A graph consists of nodes connected by edges.
+
+Context: Breadth First Search (BFS) is a graph traversal algorithm that explores nodes level by level.
+Question: How does BFS explore nodes?
+Answer: BFS explores nodes level by level.
+
+Context: Depth First Search (DFS) is a graph traversal algorithm that explores nodes as deep as possible before backtracking.
+Question: How does DFS explore nodes?
+Answer: DFS explores nodes as deep as possible before backtracking.
+
+Context: Dijkstra’s algorithm finds the shortest path between nodes in a weighted graph.
+Question: What does Dijkstra’s algorithm find?
+Answer: Dijkstra’s algorithm finds the shortest path between nodes.
+
+Context: Merge sort is a divide and conquer algorithm used to sort elements.
+Question: What technique does merge sort use?
+Answer: Merge sort uses the divide and conquer technique.
+
+Context: Quick sort is a sorting algorithm that selects a pivot element to partition the array.
+Question: What does quick sort use to partition an array?
+Answer: Quick sort uses a pivot element.
+
+Context: Binary search is an algorithm that finds an element in a sorted array by repeatedly dividing the search interval.
+Question: How does binary search find an element?
+Answer: Binary search repeatedly divides the search interval.
+
+Context: Linear search checks each element of a list sequentially to find a target value.
+Question: How does linear search find a value?
+Answer: Linear search checks elements sequentially.
+
+Context: A hash table stores data using key-value pairs and a hash function.
+Question: How does a hash table store data?
+Answer: A hash table stores data using key-value pairs.
+
+Context: Hashing is a technique used to map data of arbitrary size to fixed-size values.
+Question: What does hashing do with data?
+Answer: Hashing maps data to fixed-size values.
+
+Context: A priority queue is a data structure where elements are served based on priority.
+Question: How are elements served in a priority queue?
+Answer: Elements are served based on priority.
+
+Context: Greedy algorithms make the locally optimal choice at each step to find a global solution.
+Question: How do greedy algorithms make decisions?
+Answer: Greedy algorithms make locally optimal choices.
+
+Context: Dynamic programming solves complex problems by breaking them into smaller subproblems.
+Question: What approach does dynamic programming use?
+Answer: Dynamic programming breaks problems into smaller subproblems.
+
+Context: The knapsack problem is an optimization problem used to maximize value within a weight limit.
+Question: What does the knapsack problem try to maximize?
+Answer: The knapsack problem tries to maximize value.
+
+Context: Huffman coding is a compression technique that assigns shorter codes to frequent characters.
+Question: How does Huffman coding compress data?
+Answer: Huffman coding assigns shorter codes to frequent characters.
+
+Context: Topological sorting orders vertices of a directed graph based on dependencies.
+Question: What does topological sorting order?
+Answer: Topological sorting orders vertices based on dependencies.
+
+Context: A function in programming is a reusable block of code that performs a specific task.
+Question: What is a function in programming?
+Answer: A function is a reusable block of code.
+
+Context: A variable is a named storage location used to store data in a program.
+Question: What is a variable used for?
+Answer: A variable is used to store data.
+
+Context: A loop is a programming structure used to repeat a block of code multiple times.
+Question: What is a loop used for?
+Answer: A loop is used to repeat code multiple times.
+
+Context: Conditional statements allow programs to make decisions based on certain conditions.
+Question: What do conditional statements allow programs to do?
+Answer: Conditional statements allow programs to make decisions.
+
+Context: Object-oriented programming organizes code using objects and classes.
+Question: How does object-oriented programming organize code?
+Answer: It organizes code using objects and classes.
+
+Context: A class in programming is a blueprint used to create objects.
+Question: What is a class used for?
+Answer: A class is used to create objects.
+
+Context: An object is an instance of a class containing properties and methods.
+Question: What is an object in programming?
+Answer: An object is an instance of a class.
+
+Context: Inheritance allows a class to acquire properties and methods from another class.
+Question: What does inheritance allow a class to do?
+Answer: It allows a class to acquire properties from another class.
+
+Context: Encapsulation is the concept of hiding internal details and exposing only necessary parts of an object.
+Question: What does encapsulation do?
+Answer: Encapsulation hides internal details of an object.
+
+Context: Polymorphism allows objects to take multiple forms depending on context.
+Question: What does polymorphism allow objects to do?
+Answer: Polymorphism allows objects to take multiple forms.
+
+Context: Data mining is the process of discovering patterns in large datasets.
+Question: What does data mining discover?
+Answer: Data mining discovers patterns in datasets.
+
+Context: Feature selection is the process of choosing relevant features for training a model.
+Question: What is feature selection used for?
+Answer: Feature selection chooses relevant features.
+
+Context: Model training is the process of teaching a machine learning model using data.
+Question: What happens during model training?
+Answer: The model learns from data.
+
+Context: Model evaluation measures how well a machine learning model performs on data.
+Question: What does model evaluation measure?
+Answer: Model evaluation measures model performance.
+
+Context: A training dataset is the data used to train a machine learning model.
+Question: What is a training dataset used for?
+Answer: It is used to train a model.
+
+Context: A testing dataset is used to evaluate the performance of a trained model.
+Question: What is a testing dataset used for?
+Answer: It is used to evaluate model performance.
+
+Context: Cross-validation is a technique used to assess the reliability of a machine learning model.
+Question: What is cross-validation used for?
+Answer: Cross-validation assesses model reliability.
+
+Context: Gradient descent is an optimization algorithm used to minimize loss functions in machine learning.
+Question: What does gradient descent minimize?
+Answer: Gradient descent minimizes loss functions.
+
+Context: A loss function measures the difference between predicted and actual values.
+Question: What does a loss function measure?
+Answer: It measures the difference between predicted and actual values.
+
+Context: Backpropagation is an algorithm used to update weights in neural networks.
+Question: What is backpropagation used for?
+Answer: Backpropagation updates weights in neural networks.
+
+Context: A convolutional neural network is commonly used for image recognition tasks.
+Question: What are convolutional neural networks commonly used for?
+Answer: They are used for image recognition tasks.
+
+Context: A recurrent neural network processes sequential data such as time series or text.
+Question: What type of data do recurrent neural networks process?
+Answer: They process sequential data.
+
+Context: Transfer learning uses a pre-trained model to solve a new related problem.
+Question: What does transfer learning use?
+Answer: Transfer learning uses a pre-trained model.
+
+Context: Chatbots are AI systems designed to simulate conversation with users.
+Question: What do chatbots simulate?
+Answer: Chatbots simulate conversations with users.
+
+Context: Speech recognition converts spoken language into text.
+Question: What does speech recognition convert?
+Answer: It converts spoken language into text.
+
+Context: Text summarization is the process of generating a shorter version of a document while preserving key information.
+Question: What does text summarization produce?
+Answer: It produces a shorter version of a document.
+
+Context: Sentiment analysis determines the emotional tone behind a piece of text.
+Question: What does sentiment analysis determine?
+Answer: It determines the emotional tone of text.
+
+Context: Image classification is the task of assigning labels to images.
+Question: What does image classification do?
+Answer: It assigns labels to images.
+
+Context: Object detection identifies and locates objects within an image.
+Question: What does object detection do?
+Answer: It identifies and locates objects in an image.
+
+Context: An embedding is a numerical representation of data such as words or images.
+Question: What is an embedding?
+Answer: An embedding is a numerical representation of data.
+
+Context: Tokenization is the process of breaking text into smaller units such as words or subwords.
+Question: What does tokenization do to text?
+Answer: Tokenization breaks text into smaller units.
+
+Context: A transformer is a neural network architecture used for processing sequential data like text.
+Question: What is a transformer used for?
+Answer: A transformer processes sequential data like text.
+
+Context: Attention mechanisms help models focus on important parts of the input data.
+Question: What do attention mechanisms help models do?
+Answer: They help models focus on important parts of input data.
+
+Context: Large language models are AI systems trained on massive amounts of text data.
+Question: What are large language models trained on?
+Answer: They are trained on large amounts of text data.
+
+Context: Prompt engineering is the practice of designing prompts to guide AI model outputs.
+Question: What is prompt engineering used for?
+Answer: Prompt engineering guides AI model outputs.
+
+Context: Fine-tuning is the process of adapting a pre-trained model to a specific task.
+Question: What does fine-tuning do to a model?
+Answer: It adapts a pre-trained model to a specific task.
+
+Context: Token limits define the maximum number of tokens a language model can process at once.
+Question: What do token limits define?
+Answer: They define the maximum tokens a model can process.
+
+Context: Latency refers to the time taken for a system to respond to a request.
+Question: What does latency measure?
+Answer: Latency measures response time.
+
+Context: Throughput refers to the amount of data processed by a system in a given time.
+Question: What does throughput measure?
+Answer: Throughput measures data processed over time.
+
+Context: Scalability is the ability of a system to handle increased workload efficiently.
+Question: What does scalability describe?
+Answer: Scalability describes handling increased workload.
+
+Context: An operating system kernel is the core component that manages system resources and hardware communication.
+Question: What does the operating system kernel manage?
+Answer: It manages system resources and hardware communication.
+
+Context: A process is an instance of a program that is currently being executed by the computer.
+Question: What is a process in computing?
+Answer: A process is an instance of a program being executed.
+
+Context: Multithreading allows a program to run multiple threads concurrently.
+Question: What does multithreading allow a program to do?
+Answer: It allows a program to run multiple threads at the same time.
+
+Context: A thread is the smallest unit of execution within a process.
+Question: What is a thread in computing?
+Answer: A thread is the smallest unit of execution in a process.
+
+Context: Memory management is the process of controlling and coordinating computer memory usage.
+Question: What does memory management control?
+Answer: It controls the usage of computer memory.
+
+Context: Virtual memory allows a computer to use disk space as an extension of RAM.
+Question: What does virtual memory allow a computer to use?
+Answer: It allows the use of disk space as additional memory.
+
+Context: A file system organizes and stores files on storage devices.
+Question: What does a file system do?
+Answer: It organizes and stores files.
+
+Context: A directory is a structure used to organize files in a file system.
+Question: What is a directory used for?
+Answer: It is used to organize files.
+
+Context: A compiler error occurs when the compiler cannot translate code due to syntax issues.
+Question: When does a compiler error occur?
+Answer: It occurs when the code has syntax issues.
+
+Context: Runtime errors occur during program execution due to unexpected conditions.
+Question: When do runtime errors occur?
+Answer: They occur during program execution.
+
+Context: Debugging is the process of identifying and fixing errors in a program.
+Question: What is debugging used for?
+Answer: Debugging is used to identify and fix program errors.
+
+Context: Unit testing is a software testing method where individual components are tested independently.
+Question: What does unit testing test?
+Answer: It tests individual components of software.
+
+Context: Integration testing checks whether different modules of a program work together correctly.
+Question: What does integration testing verify?
+Answer: It verifies that modules work together correctly.
+
+Context: Software development life cycle (SDLC) describes the stages involved in building software systems.
+Question: What does SDLC describe?
+Answer: It describes stages of building software systems.
+
+Context: Agile is a software development methodology focused on iterative development and collaboration.
+Question: What does Agile emphasize in development?
+Answer: Agile emphasizes iterative development and collaboration.
+
+Context: DevOps is a practice that combines development and operations to improve software delivery.
+Question: What does DevOps combine?
+Answer: It combines development and operations.
+
+Context: Continuous integration automatically merges code changes into a shared repository.
+Question: What does continuous integration do with code changes?
+Answer: It merges them into a shared repository.
+
+Context: Continuous deployment automatically releases new software updates after testing.
+Question: What does continuous deployment do after testing?
+Answer: It releases software updates automatically.
+
+Context: Microservices architecture divides applications into smaller independent services.
+Question: What does microservices architecture divide applications into?
+Answer: It divides them into smaller independent services.
+
+Context: A monolithic architecture is a software design where all components are combined into a single system.
+Question: What characterizes monolithic architecture?
+Answer: All components are combined into one system.
+
+Context: A load balancer distributes network traffic across multiple servers.
+Question: What does a load balancer distribute?
+Answer: It distributes network traffic.
+
+Context: Latent variables are hidden variables that influence observed data in machine learning models.
+Question: What are latent variables?
+Answer: They are hidden variables influencing observed data.
+
+Context: Principal Component Analysis (PCA) is a technique used to reduce the dimensionality of data.
+Question: What does PCA reduce?
+Answer: It reduces the dimensionality of data.
+
+Context: Clustering is a machine learning technique used to group similar data points together.
+Question: What does clustering do with data?
+Answer: It groups similar data points.
+
+Context: K-means is a clustering algorithm that partitions data into a predefined number of clusters.
+Question: What does K-means do with data?
+Answer: It partitions data into clusters.
+
+Context: Decision trees are machine learning models that split data based on feature values.
+Question: How do decision trees analyze data?
+Answer: They split data based on feature values.
+
+Context: Random forests combine multiple decision trees to improve prediction accuracy.
+Question: What do random forests combine?
+Answer: They combine multiple decision trees.
+
+Context: Support Vector Machines are supervised learning models used for classification tasks.
+Question: What are Support Vector Machines used for?
+Answer: They are used for classification tasks.
+
+Context: Logistic regression is a statistical model used for binary classification.
+Question: What type of task does logistic regression perform?
+Answer: It performs binary classification.
+
+Context: Linear regression models the relationship between variables using a straight line.
+Question: What does linear regression model?
+Answer: It models relationships between variables.
+
+Context: Regularization techniques help prevent overfitting in machine learning models.
+Question: What do regularization techniques prevent?
+Answer: They prevent overfitting.
+
+Context: L1 regularization adds a penalty equal to the absolute value of coefficients.
+Question: What does L1 regularization add?
+Answer: It adds a penalty based on coefficient values.
+
+Context: L2 regularization adds a penalty based on the square of the coefficients.
+Question: What does L2 regularization penalize?
+Answer: It penalizes the squared coefficients.
+
+Context: Dropout is a neural network technique where random neurons are ignored during training.
+Question: What happens during dropout training?
+Answer: Random neurons are ignored.
+
+Context: Batch normalization normalizes layer inputs to stabilize neural network training.
+Question: What does batch normalization stabilize?
+Answer: It stabilizes neural network training.
+
+Context: Activation functions introduce non-linearity into neural networks.
+Question: What do activation functions introduce?
+Answer: They introduce non-linearity.
+
+Context: The ReLU function outputs zero for negative inputs and the input value for positive inputs.
+Question: What does the ReLU function output for negative inputs?
+Answer: It outputs zero.
+
+Context: The sigmoid function converts input values into probabilities between 0 and 1.
+Question: What does the sigmoid function produce?
+Answer: It produces probabilities between 0 and 1.
+
+Context: Softmax is an activation function used to convert outputs into probability distributions.
+Question: What does the softmax function convert outputs into?
+Answer: It converts outputs into probability distributions.
+
+Context: Epochs represent the number of times a machine learning model processes the entire dataset during training.
+Question: What do epochs represent in training?
+Answer: They represent passes over the dataset.
+
+Context: Batch size refers to the number of training samples processed before updating model weights.
+Question: What does batch size determine?
+Answer: It determines how many samples are processed before updating weights.
+
+Context: Learning rate controls how much model parameters change during training.
+Question: What does the learning rate control?
+Answer: It controls parameter updates during training.
+
+Context: Data augmentation increases training data by creating modified versions of existing data.
+Question: What does data augmentation do to training data?
+Answer: It increases data by creating modified versions.
+
+Context: Edge detection identifies boundaries within images.
+Question: What does edge detection identify?
+Answer: It identifies boundaries in images.
+
+Context: Image segmentation divides an image into meaningful regions.
+Question: What does image segmentation divide?
+Answer: It divides an image into regions.
+
+Context: Optical character recognition converts images of text into machine-readable text.
+Question: What does OCR convert?
+Answer: It converts images of text into readable text.
+
+Context: Speech synthesis converts text into spoken audio.
+Question: What does speech synthesis convert?
+Answer: It converts text into spoken audio.
+
+Context: Named Entity Recognition identifies entities such as names, locations, and organizations in text.
+Question: What does Named Entity Recognition identify?
+Answer: It identifies entities in text.
+
+Context: Language translation converts text from one language to another.
+Question: What does language translation do?
+Answer: It converts text between languages.
+
+Context: Question answering systems provide answers to questions based on given information.
+Question: What do question answering systems provide?
+Answer: They provide answers based on information.
+
+Context: A knowledge graph represents relationships between entities in a structured form.
+Question: What does a knowledge graph represent?
+Answer: It represents relationships between entities.
+
+Context: Recommendation systems suggest items to users based on preferences and behavior.
+Question: What do recommendation systems suggest?
+Answer: They suggest items to users.
+
+Context: Collaborative filtering recommends items based on similar user behavior.
+Question: What does collaborative filtering use for recommendations?
+Answer: It uses similar user behavior.
+
+Context: Content-based filtering recommends items based on item features and user preferences.
+Question: What does content-based filtering rely on?
+Answer: It relies on item features and preferences.
+
+Context: Edge AI runs artificial intelligence models directly on devices instead of cloud servers.
+Question: Where does Edge AI run models?
+Answer: It runs models directly on devices.
+
+Context: Internet of Things (IoT) refers to connected devices that communicate over the internet.
+Question: What does IoT refer to?
+Answer: It refers to connected devices communicating online.
+
+Context: Smart sensors collect environmental data and send it to connected systems.
+Question: What do smart sensors collect?
+Answer: They collect environmental data.
+
+Context: Autonomous vehicles use sensors and AI to navigate without human control.
+Question: What do autonomous vehicles use to navigate?
+Answer: They use sensors and AI.
+
+Context: Robotics combines engineering and AI to build machines that perform tasks automatically.
+Question: What does robotics combine?
+Answer: It combines engineering and AI.
+
+Context: Digital twins are virtual models that replicate real-world systems for analysis.
+Question: What do digital twins replicate?
+Answer: They replicate real-world systems.
+
+Context: Blockchain nodes maintain copies of the distributed ledger.
+Question: What do blockchain nodes maintain?
+Answer: They maintain copies of the ledger.
+
+Context: Smart contracts are self-executing programs stored on a blockchain.
+Question: What are smart contracts?
+Answer: They are self-executing programs on a blockchain.
+
+Context: Cryptocurrency is a digital currency secured using cryptographic techniques.
+Question: What secures cryptocurrency?
+Answer: Cryptographic techniques secure it.
+
+Context: Data visualization presents information using charts and graphs.
+Question: What does data visualization use to present information?
+Answer: It uses charts and graphs.
+
+Context: Dashboards display important metrics and data in a visual format.
+Question: What do dashboards display?
+Answer: They display important metrics and data.
+
+Context: Business intelligence tools analyze business data to support decision making.
+Question: What do business intelligence tools support?
+Answer: They support decision making.
+
+Context: ETL processes extract, transform, and load data into data warehouses.
+Question: What does ETL do with data?
+Answer: It extracts, transforms, and loads data.
+
+Context: Data warehouses store large volumes of historical data for analysis.
+Question: What do data warehouses store?
+Answer: They store historical data.
+
+Context: Data lakes store raw data in its original format.
+Question: What do data lakes store?
+Answer: They store raw data.
+
+Context: Metadata describes information about other data.
+Question: What does metadata describe?
+Answer: It describes other data.
+
+Context: Edge nodes are computing devices located near the source of data generation.
+Question: Where are edge nodes located?
+Answer: They are located near data sources.
+
+Context: Container orchestration automates the deployment and management of containers.
+Question: What does container orchestration automate?
+Answer: It automates container deployment and management.
+
+Context: Serverless computing allows developers to run code without managing servers.
+Question: What does serverless computing remove?
+Answer: It removes the need to manage servers.
+
+Context: API gateways manage and route API requests between clients and services.
+Question: What do API gateways manage?
+Answer: They manage API requests.
+
+Context: Rate limiting restricts the number of requests a user can make to an API.
+Question: What does rate limiting restrict?
+Answer: It restricts API requests.
+
+Context: Authentication verifies the identity of a user or system.
+Question: What does authentication verify?
+Answer: It verifies identity.
+
+Context: Authorization determines what actions a user is allowed to perform.
+Question: What does authorization determine?
+Answer: It determines allowed actions.
+
+Context: Multi-factor authentication requires multiple verification methods for access.
+Question: What does multi-factor authentication require?
+Answer: It requires multiple verification methods.
+
+Context: Data anonymization removes personal identifiers from datasets.
+Question: What does data anonymization remove?
+Answer: It removes personal identifiers.
+
+Context: Privacy-preserving machine learning protects sensitive information during model training.
+Question: What does privacy-preserving machine learning protect?
+Answer: It protects sensitive information.
+
+Context: Explainable AI provides insights into how machine learning models make decisions.
+Question: What does explainable AI provide?
+Answer: It provides insights into model decisions.
+
+Context: Federated learning trains machine learning models across multiple devices without sharing raw data.
+Question: What does federated learning avoid sharing?
+Answer: It avoids sharing raw data.
+
+Context: Data pipelines automate the movement and processing of data between systems.
+Question: What do data pipelines automate?
+Answer: They automate data movement and processing.
+
+Context: Stream processing analyzes data in real time as it is generated.
+Question: What does stream processing analyze?
+Answer: It analyzes real-time data.
+
+Context: Batch processing processes large amounts of data at scheduled intervals.
+Question: How does batch processing handle data?
+Answer: It processes data at scheduled intervals.
+
+Context: A data schema defines the structure and organization of data in a database.
+Question: What does a data schema define?
+Answer: It defines the structure of data.
+
+Context: Indexing improves database query performance by organizing data efficiently.
+Question: What does indexing improve?
+Answer: It improves database query performance.
+
+Context: A transaction in databases is a sequence of operations performed as a single unit.
+Question: What is a database transaction?
+Answer: It is a sequence of operations performed together.
+
+Context: ACID properties ensure reliable processing of database transactions.
+Question: What do ACID properties ensure?
+Answer: They ensure reliable transaction processing.
+
+Context: Replication copies database data across multiple servers for reliability.
+Question: What does database replication do?
+Answer: It copies data across multiple servers.
+
+Context: A cache is a temporary storage area that stores frequently accessed data for faster retrieval.
+Question: What does a cache store?
+Answer: It stores frequently accessed data.
+
+Context: Caching improves system performance by reducing the time required to access data.
+Question: What does caching improve?
+Answer: It improves system performance.
+
+Context: A CDN distributes website content across multiple servers located in different regions.
+Question: What does a CDN distribute?
+Answer: It distributes website content.
+
+Context: Bandwidth refers to the maximum amount of data that can be transmitted over a network.
+Question: What does bandwidth measure?
+Answer: It measures the maximum data transmission capacity.
+
+Context: A network protocol defines rules for communication between devices on a network.
+Question: What does a network protocol define?
+Answer: It defines communication rules between devices.
+
+Context: HTTP is a protocol used for transferring web pages over the internet.
+Question: What is HTTP used for?
+Answer: It is used for transferring web pages.
+
+Context: HTTPS is a secure version of HTTP that encrypts communication between clients and servers.
+Question: What does HTTPS provide?
+Answer: It provides encrypted communication.
+
+Context: TCP is a protocol that ensures reliable and ordered data transmission.
+Question: What does TCP ensure?
+Answer: It ensures reliable data transmission.
+
+Context: UDP is a protocol used for fast data transmission without guaranteeing delivery.
+Question: What does UDP prioritize?
+Answer: It prioritizes fast data transmission.
+
+Context: DNS translates domain names into IP addresses.
+Question: What does DNS translate?
+Answer: It translates domain names into IP addresses.
+
+Context: An IP address uniquely identifies a device on a network.
+Question: What does an IP address identify?
+Answer: It identifies a device on a network.
+
+Context: A router directs data packets between different networks.
+Question: What does a router direct?
+Answer: It directs data packets.
+
+Context: A switch connects multiple devices within the same local network.
+Question: What does a network switch connect?
+Answer: It connects devices within a network.
+
+Context: A modem converts digital signals into analog signals for internet communication.
+Question: What does a modem convert?
+Answer: It converts digital signals into analog signals.
+
+Context: Network latency is the delay between sending a request and receiving a response.
+Question: What does network latency measure?
+Answer: It measures the delay in communication.
+
+Context: Packet loss occurs when data packets fail to reach their destination in a network.
+Question: What happens during packet loss?
+Answer: Data packets fail to reach the destination.
+
+Context: Virtualization allows multiple operating systems to run on a single physical machine.
+Question: What does virtualization allow?
+Answer: It allows multiple operating systems on one machine.
+
+Context: Hypervisors manage virtual machines and allocate hardware resources.
+Question: What do hypervisors manage?
+Answer: They manage virtual machines.
+
+Context: Containers isolate applications along with their dependencies.
+Question: What do containers isolate?
+Answer: They isolate applications and dependencies.
+
+Context: A container image is a packaged version of an application and its environment.
+Question: What does a container image contain?
+Answer: It contains an application and its environment.
+
+Context: Logs record system events and activities for monitoring and debugging.
+Question: What do logs record?
+Answer: They record system events.
+
+Context: Monitoring systems track the performance and health of applications.
+Question: What do monitoring systems track?
+Answer: They track application performance and health.
+
+Context: Alerts notify administrators when system issues or anomalies occur.
+Question: What do alerts notify?
+Answer: They notify administrators about system issues.
+
+Context: Incident response is the process of handling security breaches or cyber attacks.
+Question: What does incident response handle?
+Answer: It handles security breaches.
+
+Context: Penetration testing simulates cyber attacks to identify system vulnerabilities.
+Question: What does penetration testing identify?
+Answer: It identifies system vulnerabilities.
+
+Context: Malware is malicious software designed to harm computer systems.
+Question: What is malware designed to do?
+Answer: It is designed to harm computer systems.
+
+Context: Phishing is a cyber attack where attackers trick users into revealing sensitive information.
+Question: What does phishing attempt to obtain?
+Answer: It attempts to obtain sensitive information.
+
+Context: Ransomware encrypts a victim’s data and demands payment to restore access.
+Question: What does ransomware do to data?
+Answer: It encrypts the data.
+
+Context: A vulnerability is a weakness in a system that attackers can exploit.
+Question: What is a vulnerability in cybersecurity?
+Answer: It is a weakness in a system.
+
+Context: Security patches are updates that fix vulnerabilities in software systems.
+Question: What do security patches fix?
+Answer: They fix vulnerabilities.
+
+Context: Digital signatures verify the authenticity and integrity of digital messages.
+Question: What do digital signatures verify?
+Answer: They verify authenticity and integrity.
+
+Context: Public key cryptography uses two keys for encryption and decryption.
+Question: How many keys does public key cryptography use?
+Answer: It uses two keys.
+
+Context: Symmetric encryption uses the same key for both encryption and decryption.
+Question: What key does symmetric encryption use?
+Answer: It uses the same key for encryption and decryption.
+
+Context: Hash functions convert data into fixed-length values for security purposes.
+Question: What do hash functions produce?
+Answer: They produce fixed-length values.
+
+Context: Blockchain blocks contain transaction data linked using cryptographic hashes.
+Question: What links blocks in a blockchain?
+Answer: Cryptographic hashes link the blocks.
+
+Context: Consensus mechanisms ensure agreement among nodes in a distributed system.
+Question: What do consensus mechanisms ensure?
+Answer: They ensure agreement among nodes.
+
+Context: Proof of Work is a blockchain mechanism requiring computational effort to validate transactions.
+Question: What does Proof of Work require?
+Answer: It requires computational effort.
+
+Context: Proof of Stake selects validators based on the amount of cryptocurrency they hold.
+Question: What does Proof of Stake depend on?
+Answer: It depends on the amount of cryptocurrency held.
+
+Context: Smart devices are electronic devices connected to the internet that can exchange data.
+Question: What do smart devices connect to?
+Answer: They connect to the internet.
+
+Context: Wearable devices are electronic devices worn on the body to track health or activity.
+Question: What do wearable devices track?
+Answer: They track health or activity.
+
+Context: Augmented reality overlays digital information onto the real-world environment.
+Question: What does augmented reality overlay?
+Answer: It overlays digital information onto the real world.
+
+Context: Virtual reality creates immersive digital environments using specialized devices.
+Question: What does virtual reality create?
+Answer: It creates immersive digital environments.
+
+Context: Mixed reality blends physical and digital elements into a single interactive environment.
+Question: What does mixed reality combine?
+Answer: It combines physical and digital elements.
+
+Context: Human-computer interaction studies how people interact with computers and interfaces.
+Question: What does human-computer interaction study?
+Answer: It studies interactions between people and computers.
+
+Context: User interfaces allow users to interact with computer systems.
+Question: What do user interfaces allow?
+Answer: They allow interaction with computer systems.
+
+Context: Graphical user interfaces use visual elements such as buttons and icons.
+Question: What do graphical user interfaces use?
+Answer: They use visual elements like buttons and icons.
+
+Context: Command-line interfaces allow users to interact with systems through text commands.
+Question: How do command-line interfaces operate?
+Answer: They operate through text commands.
+
+Context: Accessibility in software design ensures systems can be used by people with disabilities.
+Question: What does accessibility in software ensure?
+Answer: It ensures usability for people with disabilities.
+
+Context: Software scalability allows systems to handle increased users or workload.
+Question: What does software scalability allow?
+Answer: It allows systems to handle increased workload.
+
+Context: Fault tolerance enables systems to continue operating despite failures.
+Question: What does fault tolerance enable systems to do?
+Answer: It enables systems to continue operating.
+
+Context: High availability ensures systems remain operational for long periods with minimal downtime.
+Question: What does high availability ensure?
+Answer: It ensures minimal downtime.
+
+Context: Disaster recovery involves restoring systems after major failures or disasters.
+Question: What does disaster recovery involve?
+Answer: It involves restoring systems after failures.
+
+Context: Backup systems create copies of important data to prevent loss.
+Question: What do backup systems create?
+Answer: They create copies of data.
+
+Context: Data redundancy stores duplicate data across multiple systems for reliability.
+Question: What does data redundancy store?
+Answer: It stores duplicate data.
+
+Context: Data compression reduces file size to save storage space.
+Question: What does data compression reduce?
+Answer: It reduces file size.
+
+Context: Lossless compression reduces file size without losing information.
+Question: What does lossless compression preserve?
+Answer: It preserves all information.
+
+Context: Lossy compression reduces file size by removing less important data.
+Question: What does lossy compression remove?
+Answer: It removes less important data.
+
+Context: Streaming delivers media content continuously over the internet.
+Question: What does streaming deliver?
+Answer: It delivers media content.
+
+Context: Video codecs compress and decompress digital video data.
+Question: What do video codecs do?
+Answer: They compress and decompress video data.
+
+Context: Audio codecs compress and process digital audio signals.
+Question: What do audio codecs process?
+Answer: They process digital audio signals.
+
+Context: Edge servers handle data processing close to the user location.
+Question: Where do edge servers process data?
+Answer: They process data close to the user.
+
+Context: Load testing evaluates how a system performs under heavy user demand.
+Question: What does load testing evaluate?
+Answer: It evaluates system performance under heavy demand.
+
+Context: Stress testing determines the limits of a system under extreme conditions.
+Question: What does stress testing determine?
+Answer: It determines system limits.
+
+Context: Usability testing evaluates how easy a system is for users to interact with.
+Question: What does usability testing evaluate?
+Answer: It evaluates ease of use.
+
+Context: Regression testing ensures new code changes do not break existing functionality.
+Question: What does regression testing ensure?
+Answer: It ensures existing functionality remains intact.
+
+Context: Code refactoring improves code structure without changing its functionality.
+Question: What does code refactoring improve?
+Answer: It improves code structure.
+
+Context: Documentation provides explanations and instructions for using software systems.
+Question: What does documentation provide?
+Answer: It provides explanations and instructions.
+
+Context: Open-source software allows users to access and modify the source code.
+Question: What does open-source software allow users to do?
+Answer: It allows access and modification of source code.
+
+Context: Proprietary software restricts access to its source code.
+Question: What does proprietary software restrict?
+Answer: It restricts access to source code.
+
+Context: Licensing agreements define how software can be used and distributed.
+Question: What do licensing agreements define?
+Answer: They define software usage and distribution.
+
+Context: Versioning assigns unique numbers to software releases.
+Question: What does versioning assign to releases?
+Answer: It assigns unique numbers.
+
+Context: Semantic versioning labels software versions using major, minor, and patch numbers.
+Question: What numbers does semantic versioning use?
+Answer: It uses major, minor, and patch numbers.
+
+Context: Patch updates fix bugs or minor issues in software systems.
+Question: What do patch updates fix?
+Answer: They fix bugs and minor issues.
+
+Context: Feature updates introduce new functionality to software applications.
+Question: What do feature updates introduce?
+Answer: They introduce new functionality.
+
+Context: Software maintenance involves updating and improving software after deployment.
+Question: What does software maintenance involve?
+Answer: It involves updating and improving software.
+
+Context: A repository stores code and tracks changes in software projects.
+Question: What does a repository store?
+Answer: It stores code and changes.
+
+Context: Pull requests allow developers to propose changes to a codebase.
+Question: What do pull requests allow developers to do?
+Answer: They allow proposing code changes.
+
+Context: Code reviews involve examining code changes before merging them into the project.
+Question: What happens during code reviews?
+Answer: Code changes are examined.
+
+Context: Dependency management handles external libraries required by a project.
+Question: What does dependency management handle?
+Answer: It handles external libraries.
+
+Context: Build systems automate the compilation and packaging of software projects.
+Question: What do build systems automate?
+Answer: They automate compilation and packaging.
+
+Context: Continuous monitoring tracks system performance in real time.
+Question: What does continuous monitoring track?
+Answer: It tracks system performance.
+
+Context: Data governance defines policies for managing data securely and responsibly.
+Question: What does data governance define?
+Answer: It defines policies for managing data.
+
+Context: Data quality ensures data is accurate, complete, and reliable.
+Question: What does data quality ensure?
+Answer: It ensures data accuracy and reliability.
+
+Context: Data lineage tracks the origin and movement of data within systems.
+Question: What does data lineage track?
+Answer: It tracks data origin and movement.
+
+Context: A knowledge base stores structured information for easy retrieval.
+Question: What does a knowledge base store?
+Answer: It stores structured information.
+
+Context: Chatbot training involves teaching models to respond to user queries effectively.
+Question: What does chatbot training involve?
+Answer: It involves teaching models to respond to queries.
+
+Context: Intent recognition identifies the purpose behind a user's query.
+Question: What does intent recognition identify?
+Answer: It identifies the purpose of a query.
+
+Context: Dialogue systems manage conversations between users and AI systems.
+Question: What do dialogue systems manage?
+Answer: They manage conversations.
+
+Context: Context awareness allows AI systems to understand previous interactions in a conversation.
+Question: What does context awareness allow AI to understand?
+Answer: It allows understanding of previous interactions.
+
+Context: Reinforcement learning agents improve performance by receiving rewards from the environment.
+Question: How do reinforcement learning agents improve?
+Answer: They improve by receiving rewards.
+
+Context: Policy functions determine the actions taken by reinforcement learning agents.
+Question: What do policy functions determine?
+Answer: They determine the actions taken by agents.
+
+Context: Reward functions evaluate the success of actions taken by learning agents.
+Question: What do reward functions evaluate?
+Answer: They evaluate action success.
+
+Context: Exploration in reinforcement learning involves trying new actions to discover better strategies.
+Question: What does exploration involve?
+Answer: It involves trying new actions.
+
+Context: Exploitation in reinforcement learning uses known strategies to maximize rewards.
+Question: What does exploitation use?
+Answer: It uses known strategies.
+
+Context: Simulation environments allow AI models to practice tasks in a virtual setting.
+Question: What do simulation environments allow models to do?
+Answer: They allow models to practice tasks.
+
+Context: Robotics sensors collect environmental information for navigation and control.
+Question: What do robotics sensors collect?
+Answer: They collect environmental information.
+
+Context: Path planning algorithms help robots determine efficient routes to a destination.
+Question: What do path planning algorithms determine?
+Answer: They determine routes to a destination.
+
+Context: SLAM enables robots to map environments while tracking their location.
+Question: What does SLAM enable robots to do?
+Answer: It enables mapping and location tracking.
+
+Context: Actuators are components that convert electrical signals into physical movement.
+Question: What do actuators convert signals into?
+Answer: They convert signals into movement.
+
+Context: Control systems regulate the behavior of machines and devices.
+Question: What do control systems regulate?
+Answer: They regulate machine behavior.
