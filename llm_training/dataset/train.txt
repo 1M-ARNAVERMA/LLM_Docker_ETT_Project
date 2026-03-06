@@ -10,3 +10,202 @@ Context: Machine learning is a field of artificial intelligence where computers 
 Question: What is machine learning?
 Answer: Machine learning is a field where computers learn patterns from data.
 
+Context: Machine learning is a field of artificial intelligence that allows computers to learn patterns from data.
+Question: What does machine learning enable computers to do?
+Answer: Machine learning enables computers to learn patterns from data.
+
+Context: SQL is a language used to manage and query relational databases.
+Question: What is SQL used for?
+Answer: SQL is used to manage and query relational databases.
+
+Context: Git is a distributed version control system used to track changes in source code.
+Question: What is Git used for?
+Answer: Git is used to track changes in source code.
+
+Context: HTML is the standard markup language used to create webpages.
+Question: What is HTML used for?
+Answer: HTML is used to create webpages.
+
+Context: CSS is used to style and design the layout of web pages.
+Question: What does CSS do in web development?
+Answer: CSS is used to style and design web pages.
+
+Context: JavaScript is a programming language that allows interactive elements on websites.
+Question: What is JavaScript mainly used for?
+Answer: JavaScript is used to add interactive elements to websites.
+
+Context: Flask is a lightweight Python framework used for building web applications.
+Question: What is Flask used for?
+Answer: Flask is used to build web applications.
+
+Context: Django is a high-level Python framework that helps developers build secure and scalable websites.
+Question: What does Django help developers build?
+Answer: Django helps developers build secure and scalable websites.
+
+Context: A database is a structured collection of data that can be easily accessed and managed.
+Question: What is a database?
+Answer: A database is a structured collection of data.
+
+Context: A neural network is a machine learning model inspired by the structure of the human brain.
+Question: What is a neural network inspired by?
+Answer: A neural network is inspired by the structure of the human brain.
+
+Context: Deep learning is a subset of machine learning that uses neural networks with many layers.
+Question: What does deep learning use to learn from data?
+Answer: Deep learning uses neural networks with many layers.
+
+Context: Pandas is a Python library used for data manipulation and analysis.
+Question: What is Pandas used for?
+Answer: Pandas is used for data manipulation and analysis.
+
+Context: NumPy is a Python library used for numerical computations and working with arrays.
+Question: What does NumPy help with?
+Answer: NumPy helps with numerical computations and arrays.
+
+Context: TensorFlow is an open-source framework used for building and training machine learning models.
+Question: What is TensorFlow used for?
+Answer: TensorFlow is used for building and training machine learning models.
+
+Context: PyTorch is a deep learning framework widely used for research and development of neural networks.
+Question: What is PyTorch mainly used for?
+Answer: PyTorch is used for developing neural networks.
+
+Context: An API allows different software applications to communicate with each other.
+Question: What does an API allow applications to do?
+Answer: An API allows applications to communicate with each other.
+
+Context: REST APIs are web services that follow the REST architectural style for communication.
+Question: What are REST APIs based on?
+Answer: REST APIs are based on the REST architectural style.
+
+Context: A server is a computer system that provides resources or services to other computers on a network.
+Question: What does a server provide on a network?
+Answer: A server provides resources or services to other computers.
+
+Context: A client is a device or application that requests services from a server.
+Question: What does a client do in a network?
+Answer: A client requests services from a server.
+
+Context: Cloud computing allows users to access computing resources over the internet.
+Question: What does cloud computing allow users to access?
+Answer: Cloud computing allows users to access computing resources over the internet.
+
+Context: AWS is a cloud computing platform that provides storage, computing power, and other services.
+Question: What does AWS provide?
+Answer: AWS provides storage, computing power, and other cloud services.
+
+Context: Kubernetes is a container orchestration system used to automate deployment and management of containers.
+Question: What is Kubernetes used for?
+Answer: Kubernetes is used to automate deployment and management of containers.
+
+Context: Docker containers package an application with its dependencies so it can run consistently across environments.
+Question: Why are Docker containers used?
+Answer: Docker containers are used to run applications consistently across environments.
+
+Context: Linux is an open-source operating system widely used in servers and development environments.
+Question: Where is Linux commonly used?
+Answer: Linux is commonly used in servers and development environments.
+
+Context: A compiler translates high-level programming code into machine code.
+Question: What does a compiler do?
+Answer: A compiler translates programming code into machine code.
+
+Context: An interpreter executes programming code line by line without converting it into machine code first.
+Question: How does an interpreter execute code?
+Answer: An interpreter executes code line by line.
+
+Context: Cybersecurity is the practice of protecting systems, networks, and data from digital attacks.
+Question: What does cybersecurity aim to protect?
+Answer: Cybersecurity aims to protect systems, networks, and data.
+
+Context: Encryption is a method of converting information into a secure format to prevent unauthorized access.
+Question: What is encryption used for?
+Answer: Encryption is used to secure information from unauthorized access.
+
+Context: A firewall is a security system that monitors and controls incoming and outgoing network traffic.
+Question: What does a firewall control?
+Answer: A firewall controls incoming and outgoing network traffic.
+
+Context: Data science is a field that combines statistics, programming, and domain knowledge to analyze data.
+Question: What does data science combine?
+Answer: Data science combines statistics, programming, and domain knowledge.
+
+Context: Big data refers to extremely large datasets that require specialized tools for processing and analysis.
+Question: What does big data refer to?
+Answer: Big data refers to extremely large datasets.
+
+Context: Hadoop is a framework used for distributed storage and processing of large datasets.
+Question: What is Hadoop used for?
+Answer: Hadoop is used for distributed storage and processing of large datasets.
+
+Context: Natural Language Processing (NLP) enables computers to understand and process human language.
+Question: What does NLP allow computers to do?
+Answer: NLP allows computers to understand and process human language.
+
+Context: Computer vision is a field of AI that enables machines to interpret and analyze visual information.
+Question: What does computer vision enable machines to do?
+Answer: Computer vision enables machines to analyze visual information.
+
+Context: Reinforcement learning is a machine learning technique where agents learn by interacting with an environment.
+Question: How do agents learn in reinforcement learning?
+Answer: Agents learn by interacting with an environment.
+
+Context: Supervised learning is a type of machine learning where models are trained using labeled data.
+Question: What kind of data is used in supervised learning?
+Answer: Supervised learning uses labeled data.
+
+Context: Unsupervised learning finds patterns in data without using labeled examples.
+Question: What does unsupervised learning do with data?
+Answer: Unsupervised learning finds patterns without labeled examples.
+
+Context: A dataset is a collection of related data used for analysis or training machine learning models.
+Question: What is a dataset?
+Answer: A dataset is a collection of related data.
+
+Context: Feature engineering is the process of selecting and transforming variables to improve model performance.
+Question: What is feature engineering used for?
+Answer: Feature engineering is used to improve model performance.
+
+Context: Overfitting occurs when a machine learning model learns the training data too well and performs poorly on new data.
+Question: What happens during overfitting?
+Answer: Overfitting occurs when a model learns training data too well.
+
+Context: Underfitting happens when a model is too simple to capture the underlying patterns in the data.
+Question: What causes underfitting in a model?
+Answer: Underfitting happens when the model is too simple.
+
+Context: Accuracy is a metric used to evaluate the performance of a classification model.
+Question: What is accuracy used for?
+Answer: Accuracy is used to evaluate a classification model.
+
+Context: Precision measures how many of the predicted positive results are actually correct.
+Question: What does precision measure?
+Answer: Precision measures how many predicted positives are correct.
+
+Context: Recall measures how many actual positive cases are correctly identified by the model.
+Question: What does recall measure?
+Answer: Recall measures how many actual positives are identified.
+
+Context: F1 score is a metric that balances precision and recall in classification tasks.
+Question: What does the F1 score balance?
+Answer: The F1 score balances precision and recall.
+
+Context: A GPU is a processor designed to handle complex mathematical computations efficiently.
+Question: What is a GPU designed for?
+Answer: A GPU is designed for complex mathematical computations.
+
+Context: An operating system manages hardware resources and provides services for computer programs.
+Question: What does an operating system manage?
+Answer: An operating system manages hardware resources.
+
+Context: A virtual machine is a software environment that emulates a physical computer.
+Question: What does a virtual machine emulate?
+Answer: A virtual machine emulates a physical computer.
+
+Context: Blockchain is a distributed ledger technology used to securely record transactions.
+Question: What is blockchain used for?
+Answer: Blockchain is used to securely record transactions.
+
+Context: Edge computing processes data closer to the location where it is generated instead of sending it to centralized servers.
+Question: What does edge computing do with data?
+Answer: Edge computing processes data closer to where it is generated.
