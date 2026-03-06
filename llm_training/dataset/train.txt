@@ -1,0 +1,12 @@
+Context: Docker is a containerization platform used to package applications into containers.
+Question: What is Docker?
+Answer: Docker is a platform used to package applications into containers.
+
+Context: Python is a programming language widely used for automation and machine learning.
+Question: What is Python used for?
+Answer: Python is used for automation and machine learning.
+
+Context: Machine learning is a field of artificial intelligence where computers learn patterns from data.
+Question: What is machine learning?
+Answer: Machine learning is a field where computers learn patterns from data.
+
