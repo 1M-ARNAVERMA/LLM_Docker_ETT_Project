@@ -1,5 +1,6 @@
 # chatbot.py
 import torch
+import os
 
 from document_processing.loader import load_document
 from document_processing.chunker import chunk_text
@@ -10,15 +11,23 @@ from llm.tokenizer import CharTokenizer
 
 import config
 
+
 # Load LLM once (important)
 def load_llm():
-    with open("llm_training/dataset/train.txt", "r", encoding="utf-8") as f:
+
+    # robust path handling
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    train_path = os.path.join(BASE_DIR, "llm_training", "dataset", "train.txt")
+    model_path = os.path.join(BASE_DIR, "llm_training", "model_weights.pth")
+
+    with open(train_path, "r", encoding="utf-8") as f:
         text = f.read()
 
     tokenizer = CharTokenizer(text)
 
     model = GPTLanguageModel(tokenizer.vocab_size)
-    model.load_state_dict(torch.load("llm_training/model_weights.pth"))
+    model.load_state_dict(torch.load(model_path, map_location=torch.device("cpu")))
 
     model.eval()
 
@@ -28,19 +37,17 @@ def load_llm():
 model, tokenizer = load_llm()
 
 
-# Prompt builder
+# Prompt builder (simplified for better results)
 def build_prompt(context, question):
     return f"""Context: {context}
 
 Question: {question}
 
-Give a direct answer using only 5-15 words.
-
 Answer:"""
 
 
 # Text generation function
-def generate_answer(prompt,context, max_new_tokens=40):
+def generate_answer(prompt, context, max_new_tokens=40):
 
     tokens = torch.tensor(tokenizer.encode(prompt), dtype=torch.long).unsqueeze(0)
 
@@ -60,12 +67,14 @@ def generate_answer(prompt,context, max_new_tokens=40):
 
     output = tokenizer.decode(tokens[0].tolist())
 
+    # Extract only answer part
     if "Answer" in output:
         output = output.split("Answer")[-1]
 
-    # remove context repetition
-    output = output.replace(context.lower(), "")
+    # Remove context repetition (safe lower-case match)
+    output = output.lower().replace(context.lower(), "")
 
+    # Clean final output
     return output.strip().split("\n")[0]
 
 
@@ -78,18 +87,27 @@ def answer_question(file_path, question):
     # 2. Chunk it
     chunks = chunk_text(text)
 
-    # 3. Retrieve relevant chunk
-    top_chunks = simple_search(question, chunks, top_k=1)
+    # 3. Retrieve relevant chunks
+    top_chunks = simple_search(question, chunks, top_k=2)
 
     if not top_chunks:
-        return "No relevant information found."
+        return "Information not found in the document."
 
-    context = top_chunks[0]
+    # Combine top chunks
+    context = " ".join(top_chunks)
+
+    # 🔥 SMART RULE-BASED ANSWERING (Primary)
+    if question.lower().startswith("what is"):
+        return context.split(".")[0].strip()
 
     # 4. Build prompt
     prompt = build_prompt(context, question)
 
-    # 5. Generate answer
-    response = generate_answer(prompt,context)
+    # 5. Fallback to LLM
+    response = generate_answer(prompt, context)
+
+    # If LLM gives empty/garbage → fallback again
+    if len(response) < 3:
+        return context.split(".")[0].strip()
 
     return response
