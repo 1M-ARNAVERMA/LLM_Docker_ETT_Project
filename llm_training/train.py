@@ -1,5 +1,5 @@
 import torch
-from tokenizer import CharTokenizer
+from backend.llm.tokenizer import CharTokenizer
 from dataset import get_batch
 from backend.llm.model import GPTLanguageModel
 import config

@@ -1,6 +1,6 @@
 import torch
 import config
-from tokenizer import CharTokenizer
+from backend.llm.tokenizer import CharTokenizer
 from backend.llm.model import GPTLanguageModel
 
 # load dataset text
