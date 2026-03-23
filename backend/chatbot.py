@@ -14,13 +14,13 @@ import config
 
 # Load LLM once (important)
 def load_llm():
-    with open("../llm_training/dataset/train.txt", "r", encoding="utf-8") as f:
+    with open("llm_training/dataset/train.txt", "r", encoding="utf-8") as f:
         text = f.read()
 
     tokenizer = CharTokenizer(text)
 
     model = GPTLanguageModel(tokenizer.vocab_size)
-    model.load_state_dict(torch.load("../llm_training/model_weights.pth"))
+    model.load_state_dict(torch.load("llm_training/model_weights.pth"))
 
     model.eval()
 
