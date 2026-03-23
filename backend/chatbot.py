@@ -31,12 +31,16 @@ model, tokenizer = load_llm()
 # Prompt builder
 def build_prompt(context, question):
     return f"""Context: {context}
+
 Question: {question}
-Answer in one short sentence:"""
+
+Give a direct answer using only 5-15 words.
+
+Answer:"""
 
 
 # Text generation function
-def generate_answer(prompt, max_new_tokens=40):
+def generate_answer(prompt,context, max_new_tokens=40):
 
     tokens = torch.tensor(tokenizer.encode(prompt), dtype=torch.long).unsqueeze(0)
 
@@ -56,8 +60,11 @@ def generate_answer(prompt, max_new_tokens=40):
 
     output = tokenizer.decode(tokens[0].tolist())
 
-    if "Answer:" in output:
-        output = output.split("Answer:")[-1]
+    if "Answer" in output:
+        output = output.split("Answer")[-1]
+
+    # remove context repetition
+    output = output.replace(context.lower(), "")
 
     return output.strip().split("\n")[0]
 
@@ -83,6 +90,6 @@ def answer_question(file_path, question):
     prompt = build_prompt(context, question)
 
     # 5. Generate answer
-    response = generate_answer(prompt)
+    response = generate_answer(prompt,context)
 
     return response
