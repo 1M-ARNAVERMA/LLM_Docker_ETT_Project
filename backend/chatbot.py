@@ -32,25 +32,13 @@ model, tokenizer = load_llm()
 
 # Prompt builder
 def build_prompt(context, question):
-    return f"""
-You are a documentation assistant.
-
-Answer ONLY from the context below.
-If the answer is not present, say:
-"Information not found in the document."
-
-Context:
-{context}
-
-Question:
-{question}
-
-Answer:
-"""
+    return f"""Context: {context}
+Question: {question}
+Answer:"""
 
 
 # Text generation function
-def generate_answer(prompt, max_new_tokens=80):
+def generate_answer(prompt, max_new_tokens=40):
 
     tokens = torch.tensor(tokenizer.encode(prompt), dtype=torch.long).unsqueeze(0)
 
