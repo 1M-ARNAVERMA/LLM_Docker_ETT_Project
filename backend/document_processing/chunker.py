@@ -9,3 +9,4 @@ def chunk_text(text, chunk_size=300, overlap=50):
         chunks.append(" ".join(chunk))
 
     return chunks
+
