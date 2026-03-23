@@ -7,6 +7,7 @@ class CharTokenizer:
         self.vocab_size = len(chars)
 
     def encode(self, text):
+        text = text.lower()
         return [self.stoi.get(c, 0) for c in text]
 
     def decode(self, tokens):

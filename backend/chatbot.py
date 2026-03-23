@@ -1,5 +1,4 @@
 # chatbot.py
-
 import torch
 
 from document_processing.loader import load_document
@@ -10,7 +9,6 @@ from llm.model import GPTLanguageModel
 from llm.tokenizer import CharTokenizer
 
 import config
-
 
 # Load LLM once (important)
 def load_llm():
@@ -34,7 +32,7 @@ model, tokenizer = load_llm()
 def build_prompt(context, question):
     return f"""Context: {context}
 Question: {question}
-Answer:"""
+Answer in one short sentence:"""
 
 
 # Text generation function
@@ -56,7 +54,12 @@ def generate_answer(prompt, max_new_tokens=40):
 
         tokens = torch.cat((tokens, next_token), dim=1)
 
-    return tokenizer.decode(tokens[0].tolist())
+    output = tokenizer.decode(tokens[0].tolist())
+
+    if "Answer:" in output:
+        output = output.split("Answer:")[-1]
+
+    return output.strip().split("\n")[0]
 
 
 # MAIN FUNCTION (this is what backend will call)
