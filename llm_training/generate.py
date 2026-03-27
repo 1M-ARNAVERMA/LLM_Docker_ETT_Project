@@ -1,7 +1,7 @@
 import torch
 import config
-from backend.llm.tokenizer import CharTokenizer
-from backend.llm.model import GPTLanguageModel
+from llm_training.tokenizer import CharTokenizer
+from llm_training.model import GPTLanguageModel
 
 # load dataset text
 with open("dataset/train.txt", "r", encoding="utf-8") as f:

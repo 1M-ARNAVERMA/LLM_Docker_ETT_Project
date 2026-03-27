@@ -7,7 +7,7 @@ from document_processing.loader import load_document
 from document_processing.chunker import chunk_text
 from retrieval.vector_store import simple_search
 
-from llm.model import GPTLanguageModel
+from llm_training.model import GPTLanguageModel
 
 import config
 
