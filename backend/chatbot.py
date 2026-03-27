@@ -1,13 +1,13 @@
 # chatbot.py
 import torch
 import os
+import pickle
 
 from document_processing.loader import load_document
 from document_processing.chunker import chunk_text
 from retrieval.vector_store import simple_search
 
 from llm.model import GPTLanguageModel
-from llm.tokenizer import CharTokenizer
 
 import config
 
@@ -18,14 +18,14 @@ def load_llm():
     # robust path handling
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-    train_path = os.path.join(BASE_DIR, "llm_training", "dataset", "train.txt")
+    tokenizer_path = os.path.join(BASE_DIR, "llm_training", "tokenizer.pkl")
     model_path = os.path.join(BASE_DIR, "llm_training", "model_weights.pth")
 
-    with open(train_path, "r", encoding="utf-8") as f:
-        text = f.read()
+    # 🔥 Load tokenizer from file (NEW)
+    with open(tokenizer_path, "rb") as f:
+        tokenizer = pickle.load(f)
 
-    tokenizer = CharTokenizer(text)
-
+    # Load model
     model = GPTLanguageModel(tokenizer.vocab_size)
     model.load_state_dict(torch.load(model_path, map_location=torch.device("cpu")))
 
@@ -71,7 +71,7 @@ def generate_answer(prompt, context, max_new_tokens=40):
     if "Answer" in output:
         output = output.split("Answer")[-1]
 
-    # Remove context repetition (safe lower-case match)
+    # Remove context repetition
     output = output.lower().replace(context.lower(), "")
 
     # Clean final output
@@ -88,7 +88,7 @@ def answer_question(file_path, question):
     chunks = chunk_text(text)
 
     # 3. Retrieve relevant chunks
-    top_chunks = simple_search(question, chunks, top_k=2)
+    top_chunks = simple_search(question, chunks, top_k=3)
 
     if not top_chunks:
         return "Information not found in the document."
@@ -96,7 +96,11 @@ def answer_question(file_path, question):
     # Combine top chunks
     context = " ".join(top_chunks)
 
-    # 🔥 SMART RULE-BASED ANSWERING (Primary)
+    # 🔥 Not found detection (NEW)
+    if all(word not in context.lower() for word in question.lower().split()):
+        return "Information not found in the document."
+
+    # 🔥 SMART RULE-BASED ANSWERING
     if question.lower().startswith("what is"):
         return context.split(".")[0].strip()
 
@@ -106,7 +110,7 @@ def answer_question(file_path, question):
     # 5. Fallback to LLM
     response = generate_answer(prompt, context)
 
-    # If LLM gives empty/garbage → fallback again
+    # fallback safety
     if len(response) < 3:
         return context.split(".")[0].strip()
 
