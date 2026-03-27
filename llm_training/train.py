@@ -37,4 +37,9 @@ for iter in range(config.max_iters):
 # save trained model
 torch.save(model.state_dict(), "model_weights.pth")
 
+import pickle
+
+with open("tokenizer.pkl", "wb") as f:
+    pickle.dump(tokenizer, f)
+
 print("Training finished. Model saved.")
