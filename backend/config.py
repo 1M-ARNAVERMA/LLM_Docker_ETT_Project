@@ -2,7 +2,7 @@ batch_size = 32
 block_size = 128
 
 learning_rate = 3e-4
-max_iters = 3000
+max_iters = 8000
 eval_interval = 300
 
 n_embd = 128
