@@ -3,6 +3,10 @@ import torch
 import os
 import pickle
 
+import sys
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+
 from document_processing.loader import load_document
 from document_processing.chunker import chunk_text
 from retrieval.vector_store import simple_search
@@ -14,17 +18,18 @@ import config
 # Load LLM once (important)
 def load_llm():
 
-    # robust path handling
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    import sys
+    sys.path.append(os.path.join(BASE_DIR, "llm_training"))
 
     tokenizer_path = os.path.join(BASE_DIR, "llm_training", "tokenizer.pkl")
     model_path = os.path.join(BASE_DIR, "llm_training", "model_weights.pth")
 
-    # 🔥 Load tokenizer from file (NEW)
+    import pickle
     with open(tokenizer_path, "rb") as f:
         tokenizer = pickle.load(f)
 
-    # Load model
     model = GPTLanguageModel(tokenizer.vocab_size)
     model.load_state_dict(torch.load(model_path, map_location=torch.device("cpu")))
 
