@@ -92,7 +92,7 @@ def answer_question(file_path, question):
     chunks = chunk_text(text)
 
     # 3. Retrieve relevant chunks
-    top_chunks = simple_search(question, chunks, top_k=3)
+    top_chunks = simple_search(question, chunks, top_k=1)
 
     if not top_chunks:
         return "Information not found in the document."
@@ -100,8 +100,12 @@ def answer_question(file_path, question):
     # Combine top chunks
     context = " ".join(top_chunks)
 
+    print("Retrieved context:", context)
+
     # 🔥 Not found detection (NEW)
-    if all(word not in context.lower() for word in question.lower().split()):
+    keywords = [w for w in question.lower().split() if w not in ["what", "is", "the", "a", "an"]]
+
+    if not any(word in context.lower() for word in keywords):
         return "Information not found in the document."
 
     # 🔥 SMART RULE-BASED ANSWERING
