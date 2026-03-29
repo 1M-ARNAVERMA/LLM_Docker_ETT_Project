@@ -1,4 +1,4 @@
-from backend.chatbot import answer_question
+from chatbot import answer_question
 
 file_path = "data/sample.txt"  # create this file
 
