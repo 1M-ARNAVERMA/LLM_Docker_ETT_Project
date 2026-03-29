@@ -11,7 +11,6 @@ from llm_training.model import GPTLanguageModel
 
 import config
 
-
 # Load LLM once (important)
 def load_llm():
 
