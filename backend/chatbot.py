@@ -103,8 +103,11 @@ def answer_question(file_path, question):
     print("Retrieved context:", context)
 
     # 🔥 Not found detection (NEW)
-    keywords = [w for w in question.lower().split() if w not in ["what", "is", "the", "a", "an"]]
+    import re
 
+    clean_question = re.sub(r'[^\w\s]', '', question.lower())
+    keywords = [w for w in clean_question.split() if w not in ["what", "is", "the", "a", "an"]]
+    
     if not any(word in context.lower() for word in keywords):
         return "Information not found in the document."
 
