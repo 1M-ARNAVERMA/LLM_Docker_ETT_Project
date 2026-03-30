@@ -71,6 +71,22 @@ def generate_answer(prompt, context, max_new_tokens=40):
 
     return output.strip().split("\n")[0]
 
+def simple_keyword_search(question, chunks):
+    import re
+
+    clean_question = re.sub(r'[^\w\s]', '', question.lower())
+    keywords = clean_question.split()
+
+    best_chunk = None
+    best_score = 0
+
+    for chunk in chunks:
+        score = sum(1 for word in keywords if word in chunk.lower())
+        if score > best_score:
+            best_score = score
+            best_chunk = chunk
+
+    return [best_chunk] if best_chunk else []
 
 # MAIN FUNCTION
 def answer_question(file_path, question):
@@ -82,7 +98,7 @@ def answer_question(file_path, question):
     chunks = chunk_text(text)
 
     # 3. Retrieve relevant chunks
-    top_chunks = simple_search(question, chunks, top_k=1)
+    top_chunks = simple_keyword_search(question, chunks)
 
     if not top_chunks:
         return "Information not found in the document."
