@@ -109,6 +109,7 @@ def answer_question(file_path, question):
     print("DEBUG CONTEXT:", context)
 
     # ✅ Clean question (fix punctuation issue)
+    import re
     clean_question = re.sub(r'[^\w\s]', '', question.lower())
     keywords = [w for w in clean_question.split() if w not in ["what", "is", "the", "a", "an"]]
 
@@ -120,7 +121,24 @@ def answer_question(file_path, question):
 
     # ✅ Simple rule-based answer (fast + reliable)
     if question.lower().startswith("what is"):
-        return context.split(".")[0].strip()
+        import re
+
+        clean_question = re.sub(r'[^\w\s]', '', question.lower())
+        keywords = clean_question.split()
+
+        sentences = context.split(".")
+
+        best_sentence = ""
+        best_score = 0
+
+        for sentence in sentences:
+            score = sum(1 for word in keywords if word in sentence.lower())
+            if score > best_score:
+                best_score = score
+                best_sentence = sentence
+
+        if best_sentence:
+            return best_sentence.strip()
 
     # 4. Build prompt
     prompt = build_prompt(context, question)
