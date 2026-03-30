@@ -5,7 +5,12 @@ from model import GPTLanguageModel
 import config
 
 # load dataset
-with open("dataset/train.txt", "r", encoding="utf-8") as f:
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+train_path = os.path.join(BASE_DIR, "dataset", "train.txt")
+
+with open(train_path, "r", encoding="utf-8") as f:
     text = f.read()
 
 # tokenizer
@@ -36,5 +41,10 @@ for iter in range(config.max_iters):
 
 # save trained model
 torch.save(model.state_dict(), "model_weights.pth")
+
+import pickle
+
+with open("tokenizer.pkl", "wb") as f:
+    pickle.dump(tokenizer, f)
 
 print("Training finished. Model saved.")

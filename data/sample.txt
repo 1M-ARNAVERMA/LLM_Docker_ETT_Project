@@ -1,0 +1,5 @@
+Docker is a containerization platform that allows developers to package applications and their dependencies into containers. Containers are lightweight and isolated environments.
+
+Python is a high-level programming language widely used in web development, machine learning, and automation.
+
+Flask is a lightweight web framework in Python used to build APIs and web applications.

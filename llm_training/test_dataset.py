@@ -1,5 +1,5 @@
 import torch
-from tokenizer import CharTokenizer
+from llm_training.tokenizer import CharTokenizer
 from dataset import get_batch
 
 with open("dataset/train.txt", "r", encoding="utf-8") as f:
