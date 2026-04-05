@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  docmind:
+    build: .
+    container_name: docmind_chatbot
+    ports:
+      - "8501:8501"
+    volumes:
+      # Mount your trained weights + tokenizer without rebuilding the image
+      - ./model_weights.pth:/app/model_weights.pth:ro
+      - ./tokenizer.pkl:/app/tokenizer.pkl:ro
+      # Optional: mount local dataset folder
+      - ./dataset:/app/dataset:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
