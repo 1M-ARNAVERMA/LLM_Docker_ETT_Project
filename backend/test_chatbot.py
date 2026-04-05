@@ -1,8 +1,8 @@
 from chatbot import answer_question
-
+from backend.chatbot import answer_question
 file_path = "data/sample.txt"  # create this file
 
-question = "What is Python ?"
+question = "What is Docker ?"
 
 response = answer_question(file_path, question)
 

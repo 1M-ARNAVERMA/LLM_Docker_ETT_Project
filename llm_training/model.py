@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import config
-
+from llm_training import config
+from llm_training.config import n_embd
 
 class Head(nn.Module):
 

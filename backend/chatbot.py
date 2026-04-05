@@ -6,11 +6,11 @@ import re
 import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(BASE_DIR)
+sys.path.append(os.path.join(BASE_DIR, "backend"))
 
-from document_processing.loader import load_document
-from document_processing.chunker import chunk_text
-from retrieval.vector_store import simple_search
+from backend.document_processing.loader import load_document
+from backend.document_processing.chunker import chunk_text
+from backend.retrieval.vector_store import simple_search
 
 from llm_training.model import GPTLanguageModel
 import config
